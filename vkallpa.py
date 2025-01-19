@@ -13,7 +13,7 @@ st.set_page_config(layout="wide")
 #df = df.drop(columns="Energie cumule (kWh)")
 #df = df.dropna()
 
-df = pd.read_csv("merged_data.csv")
+df = pd.read_csv("https://github.com/marsgr6/vkallpa_buildings/raw/refs/heads/main/merged_data.csv")
 
 df[df.columns[1:]] = df[df.columns[1:]].applymap(lambda x: max(x, 0))
 
